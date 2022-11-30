@@ -1,52 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUSICAL TILES</title>
     <style>
-        body{
-            background-color:antiquewhite;
+        body {
+            background-color: rgb(210, 252, 161);
 
         }
-        .img{
-            display: inline-grid;
+
+        .img {
+            display: flex;
+            justify-content: space-between;
+            padding:0 80px;
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+        }
+        @media (max-width:768px){
+            .img{
+                flex-direction: column;
+               margin:20px;
+            
+                display:flex;
+                align-items: center;
+            }
+
             
         }
     </style>
     <script>
-        function piano(){
+        function music1() {
             document.getElementsByClassName("img1")
-            alert("hello")
+
+            var audio01 = new Audio('./music01.mp3');
+            audio01.play();
+        }
+        function music2() {
+            document.getElementsByClassName("img1")
+
+            var audio01 = new Audio('./music01.mp3');
+            audio01.play();
+        }
+        function music3() {
+            document.getElementsByClassName("img1")
+
+            var audio01 = new Audio('./music01.mp3');
+            audio01.play();
+        }
+        function music4() {
+            document.getElementsByClassName("img1")
+
             var audio01 = new Audio('./music01.mp3');
             audio01.play();
         }
 
-        
+
+
+
+
 
     </script>
 </head>
+
 <body>
-    <div class ="header">
+    <div class="header">
         <center>
-            <h2>!!!!!! MUSICAL TILES  !!!!!!</h2>
+            <h2>!!!!!! MUSICAL TILES !!!!!!</h2>
         </center>
     </div>
     <div class="img">
         <div class="img1">
-            <img src ="./piano.jpg" onclick="piano()">
+            <img src="./piano.jpg" onclick="music1()">
         </div>
 
         <div class="img2">
-            <img src ="#">
+            <img src="#" onclick="music2()">
         </div>
 
         <div class="img3">
-            <img src ="#">
+            <img src="#" onclick="music3()">
         </div>
-
     </div>
-    
+
+
+
 </body>
+
 </html>
